@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+<body style="background: linear-gradient(90deg, rgba(127,127,132,1) 0%, rgba(92,85,85,1) 35%, rgba(0,0,0,1) 100%)">
+    <h1 style="text-align: center; color: rgb(255, 255, 255);">SIMPLE CALCULATOR</h1><hr>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="screen">
+            <button class="first" onclick="allclear()">AC</button>
+            <button class="first" onclick="show('.')">.</button>
+            <button class="first" onclick="show('%')">%</button>
+            <button class="symbol" onclick="show('/')">&divide;</button>
+            <button class="second" onclick="show('7')">7</button>
+            <button class="second" onclick="show('8')">8</button>
+            <button class="second" onclick="show('9')">9</button>
+            <button class="symbol" onclick="show('-')">-</button>
+            <button class="second" onclick="show('4')">4</button>
+            <button class="second" onclick="show('5')">5</button>
+            <button class="second" onclick="show('6')">6</button>
+            <button class="symbol" onclick="show('*')">&times;</button>
+            <button class="second" onclick="show('1')">1</button>
+            <button class="second" onclick="show('2')">2</button>
+            <button class="second" onclick="show('3')">3</button>
+            <button class="symbol" onclick="show('+')">+</button>
+            <button class="second" onclick="show('0')">0</button>
+            <button class="second" onclick="show('(')">(</button>
+            <button class="second" onclick="show(')')">)</button>
+            <button class="symbol" onclick="calc()">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
